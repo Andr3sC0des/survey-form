@@ -1,6 +1,4 @@
-# Survey Form
-
-![Survey Form](./results/desktop.png)
+# Encuesta
 
 ## SKILLS
 
