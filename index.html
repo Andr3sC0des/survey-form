@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title" id="title">freeCodeCamp Survey Form</h1>
+        <p class="header__paragraph" id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main class="main">
+        <div class="content">
+            <form id="survey-form" class="form">
+
+                <label class="form__labels" id="name-label" for="name">Name</label>
+                <input class="form__input" type="text" id="name" required placeholder="Enter your name">
+
+                <label class="form__labels" id="email-label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" required placeholder="Enter your email">
+
+                <label class="form__labels" id="number-label" for="number">Age (optional)</label>
+                <input class="form__input" type="number" id="number" placeholder="Age" min="0" max="100">
+
+                <p class="form__paragraph">Which option best describes your current role?</p>
+                <select class="form__dropdown" name="" id="dropdown">
+                    <option value="">Select current role</option>
+                    <option>Student</option>
+                    <option>Full time job</option>
+                    <option>Full time learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+
+                <p class="form__paragraph">Would you recommend freeCodeCamp to a friend?</p>
+                <section class="form__radiobuttons">
+                    <label class="form__radio">
+                        <input value="Definetly" checked type="radio" name="recommend" id="">
+                        Definetly
+                    </label>
+
+                    <label class="form__radio">
+                        <input value="Maybe" type="radio" name="recommend" id="">
+                        Maybe
+                    </label>
+
+                    <label class="form__radio">
+                        <input value="Not Sure" type="radio" name="recommend" id="">
+                        Not sure
+                    </label>
+                </section>
+
+
+                <p class="form__paragraph">What is your favorite feature of freeCodeCamp?</p>
+                <select class="form__dropdown" name="" id="dropdown">
+                    <option value="">Select current role</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                </select>
+
+                <p class="form__paragraph">What would you like to see improved? (Check all that apply)</p>
+                <section class="form__checkboxes">
+                    <label class="form__boxes">
+                        <input value="Front-end Projects" type="checkbox" name="improve" id="improve">
+                        Front-end Projects
+                    </label>
+                    <label class="form__boxes">
+                        <input value="Back-end Projects" type="checkbox" name="improve" id="improve">
+                        Back-end Projects
+                    </label>
+                    <label class="form__boxes">
+                        <input value="Data Visualization" type="checkbox" name="improve" id="improve">
+                        Data Visualization
+                    </label>
+                    <label class="form__boxes">
+                        <input value="Challenges" type="checkbox" name="improve" id="improve">
+                        Challenges
+                    </label>
+                    <label class="form__boxes">
+                        <input value="Open Source Community" type="checkbox" name="improve" id="improve">
+                        Open Source Community
+                    </label>
+                    <label class="form__boxes">
+                        <input value="Gitter help rooms" type="checkbox" name="improve" id="improve">
+                        Gitter help rooms
+                    </label>
+                    <label class="form__boxes">
+                        <input value="Videos" type="checkbox" name="improve" id="improve">
+                        Videos
+                    </label>
+                </section>
+
+                <p class="form__paragraph">Any comments or suggestions</p>
+                <textarea class="form__textarea" name="" id="" cols="30" rows="10"
+                    placeholder="Enter your comment here..."></textarea>
+
+                <button class="form__button" id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
